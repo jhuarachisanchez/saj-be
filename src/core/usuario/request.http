@@ -1,0 +1,17 @@
+### Creación de usuario
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "usuario": "pepe",
+  "contrasena": "hashedPass",
+  "correoElectronico": "pepe@gmail.com",
+  "persona": {
+    "tipoDocumento": "ci",
+    "nroDocumento": "7777777",
+    "nombres": "Jose Luis",
+    "primerApellido": "Apaza",
+    "fechaNacimiento": "10-10-2020"
+  },
+  "roles": ["ADMIN"]
+}
